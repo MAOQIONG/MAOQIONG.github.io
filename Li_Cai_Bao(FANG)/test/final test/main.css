@@ -1,0 +1,227 @@
+/* ======
+    默认样式
+   ====== */
+html {
+    font-size: 62.5%;
+    color: #222;
+    font-family: "微软雅黑";
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* ======
+    工具样式
+   ====== */
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ======
+    浏览器更新提示样式
+   ====== */
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+/* ======
+    页面标题
+   ====== */
+header {
+    width: 100%;
+    padding: 2.5rem 8%;
+}
+header h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    color: #47a3da;
+}
+
+@media only screen and (max-width:55em) {
+    header {
+        padding: 2.5rem 0;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+}
+
+/* ======
+    主题内容
+   ====== */
+.container {
+    width: 80.5%;
+    margin: 0 8% 0 11.5%;
+    position: relative;
+}
+
+.container .item + .item {
+    margin-top: 1.5rem;
+}
+
+.item h2 {
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.item h2 span {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    color:#bdd0db;
+}
+
+.item h2 em {
+    display: block;
+    font-size: 3.4rem;
+}
+
+.item h2 em:nth-child(2n) {
+    color: #3594cb;
+}
+
+.item h2 em:nth-child(2n - 1) {
+    color: #6cbfee;
+}
+
+
+
+
+.item .item-content {
+    width: 70%;
+    float: right;
+    padding: 1.5rem 1.5rem;
+    color: #fff;
+    background: #6cbfee;
+}
+
+
+.item .item-content h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1rem;
+}
+
+.item .item-content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.line{
+    width: 1.2rem;
+    height: 100%;
+    background-color: #afdcf8;
+    position: absolute;
+    top: 0;
+    left: 18%;
+}
+
+@media only screen and (max-width:55em) {
+
+}
+@media only screen and (max-width: 55em) and (min-width: 40em) {
+    .item h2 em {
+        font-size: 1.7rem;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .item h2 {
+        float: none;
+    }
+
+    .item .item-content {
+        float:none;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+
+
+
+/*大屏幕：x > 55em*/
+/*中屏幕：55em >= x > 40em*/
+/*小屏幕：x <= 40em*/
+/*@media only screen and (max-width:55em) {*/
+
+/*}*/
+/*@media only screen and (max-width: 55em) and (min-width: 40em) {*/
+
+/*}*/
+/*@media only screen and (max-width: 40em) {*/
+
+/*}*/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+
+
+</head>
+<body>
+<div id = container>
+    <div id="content">
+        <div id="logo">
+            <p></p>
+            <h1>IFANR.IN</h1>
+            <h2>玩物志, 就是要你乱花钱</h2>
+        </div>
+        <div id="login">
+            <h1>登 陆</h1>
+            <hr size="1">
+            <div id="user">
+                <span></span>
+                <input type="text" id="login_user_name">
+            </div>
+            <div id="password">
+                <span></span>
+                <input type="password" id="login_user_password">
+            </div>
+            <button id="btn_login">立 即 登 陆</button>
+            <div id="hr"><div>OR</div></div>
+            <button id="btn_reg">立 即 注 册</button>
+        </div>
+    </div>
+    <!-- ----------------------------------注册弹框------------------------------------------------ -->
+    <div id="reg">
+        <h2><img src="../images/close.gif">会员注册</h2>
+        <form name="reg">
+            <table>
+                <tr>
+                    <td>用户名：</td>
+                    <td>
+                        <input type="text" id="user_name">
+                        <span id="user_name_hint" class="hint"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td>
+                        <input type="password" id="user_password">
+                        <span id="user_password_hint" class="hint"></span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>确认密码：</td>
+                    <td>
+                        <input type="password" id="certify_password">
+                        <span id="certify_password_hint" class="hint"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>电子邮箱:</td>
+                    <td>
+                        <input type="text" id="email">
+                        <span id="email_hint" class="hint"></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>个性签名：</td>
+                    <td>
+                        <textarea style="height:80px;width:250px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="btn_submit_reg" value="立即注册">
+        </form>
+    </div>
+</div>
+<script src="../js/cookie.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

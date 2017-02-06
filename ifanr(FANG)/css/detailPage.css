@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+}
+body{
+    background:#f9f9f9;
+}
+#container_top{
+    width:950px;
+    margin:12px auto 0;
+}
+.clear{
+    clear:both;
+}
+#slide_show_container{
+    float:left;
+}
+#picture_container ul{
+    width:515px;
+    height:380px;
+    position:relative;
+    overflow:hidden;
+}
+#picture_container ul li{
+    position:absolute;
+    top:0;
+    left:0;
+}
+#picture_container ul li{
+    width:515px;
+}
+#picture_list li{
+    float:left;
+    width:75px;
+    height:50px;
+    margin:6px 8px 0 0;
+    overflow:hidden;
+}
+#picture_list li img{
+    width:75px;
+}
+
+
+#product_detail{
+    width:405px;
+    float:left;
+    margin-left:30px;
+}
+#product_detail h1{
+    font-size:18px;
+    color:#4b4d5a;
+    margin:5px 0 22px 0;
+    font-weight:bold;
+}
+#product_detail h2{
+    font-size:27px;
+    font-weight:900;
+    color:#373d48;
+    margin-bottom:30px;
+}
+#product_detail h3 i{
+    display:inline-block;
+    width:15px;
+    height:14px;
+    background:url(../images/i.gif) no-repeat;
+}
+#product_detail h3{
+    font-size:14px;
+    color:#999;
+    font-weight:normal;
+    line-height:25px;
+    padding-bottom:30px;
+    border-bottom:1px solid #ccccd2;
+    margin-bottom:24px;
+}
+#product_detail p{
+    font-size:12px;
+    color:#929292;
+    margin-bottom:8px;
+}
+#color_buttons{
+    margin-bottom:10px;
+}
+#color_buttons button{
+    width:60px;
+    height:28px;
+    margin-right:10px;
+    border:1px solid #ccccd2;
+    border-radius:2px;
+    color:#4b4d5a;
+    outline:none;
+    background:transparent;
+}
+#color_buttons button.selected{
+    background:#4b4d5a;
+    color:#fff;
+}
+#shopping_number{
+    overflow:hidden;
+    margin-bottom:20px;
+}
+#shopping_number strong{
+    font-size:12px;
+    color:#929292;
+    line-height:34px;
+    float:left;
+}
+#sign_and_number{
+    width:114px;
+    height:32px;
+    border:1px solid #ccccd2;
+    float:left;
+}
+#sign_and_number div{
+    float:left;
+    width:38px;
+    height:32px;
+    text-align:center;
+    line-height:32px;
+    color:#9b9b9b;
+    font-weight:bold;
+}
+.sign{
+    font-size:14px;
+    color:#d9d9d9;
+    cursor:pointer;
+}
+#go_to_buy,#put_into_cart{
+    width:180px;
+    height:44px;
+    color:#fff;
+    font-size:13px;
+    background:#f8504f;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    float:left;
+    margin-right:18px;
+}
+#go_to_buy:hover,#put_into_cart:hover{
+    font-size:16px;
+}
+#message_content{
+    width:950px;
+    margin:80px auto 0;
+}
+#message_content h2{
+    border-bottom:3px solid #d9d9d9;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    font-size:14px;
+}
+#message_content h2 span{
+    font-size:14px;
+    border-bottom:3px solid #2b2b2b;
+    padding-bottom:12px;
+}
+#detail_message_left{
+    width:640px;
+    float:left;
+    margin-right:24px;
+}
+#detail_message_left img{
+    width:640px;
+}
+#detail_message_right{
+    width:286px;
+    float:left;
+    height:2000px;
+}
+#brand_message{
+    width:284px;
+    background:#efefef;
+    border:1px solid #d9d9d9;
+}
+#brand_message h3{
+    color:#929292;
+    text-align:center;
+    height:46px;
+    line-height:46px;
+    border-bottom:1px solid #d9d9d9;
+    margin-bottom:40px;
+}
+#brand_message img{
+    width:70px;
+    display:block;
+    margin:0 auto 18px;
+    border:1px solid #d9d9d9;
+}
+#brand_message h4{
+    text-align:center;
+    color:#373d48;
+    margin-bottom:42px;
+}
+#brand_message p{
+    width:236px;
+    margin:0 auto 50px;
+    color:#999999;
+}
+#paragrams{
+    margin-top:42px;
+}
+#paragrams h3,#transport h3{
+    margin-bottom:21px;
+}
+#paragrams h3 i,#transport h3 i{
+    float:left;
+    width:32px;
+    height:33px;
+    background:url(../images/detail_paragrams.gif) no-repeat;
+}
+#paragrams h3 span,#transport h3 span{
+    color:#61656e;
+    font-size:14px;
+    line-height:33px;
+    margin-left:5px;
+}
+#paragrams p,#transport p{
+    color:#999;
+    line-height:25px;
+    font-size:14px;
+    padding-bottom:46px;
+    margin-bottom:42px;
+    border-bottom:1px dotted #979797;
+}
+#transport h3 i{
+    background:url(../images/detail_transport.gif) no-repeat;
+}
+#transport p span{
+    color:#545454;
+}

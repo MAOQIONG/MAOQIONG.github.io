@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+		  padding: 0;
+		  margin: 0;
+		}
+
+		body {
+			background:#000;
+		}
+	</style>
+</head>
+<body>
+	<div id="Container">
+		<canvas id="c"></canvas>
+		<button id="refresh">刷新</button>
+	</div>
+
+<script>
+	var c = document.getElementById("c");
+	var ctx = c.getContext("2d");
+
+	c.height = window.innerHeight;
+	c.width = window.innerWidth;
+
+	var textChars = "abcdefghijklmnopqrstuvwxyz0123456789";
+	textChars = textChars.split("");
+
+	var font_size = 20;
+	var columns = c.width/font_size; //雨的列数
+
+	var drops = [];
+
+	for (var x=0; x<columns; x++) {
+		drops[x] = 1;
+	}
+
+	var btn = document.getElementById("refresh");
+	btn.addEventListener("click", function(){
+		draw();
+	});
+
+	function draw() {
+		ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+		ctx.fillRect(0, 0, c.width, c.height);
+
+		ctx.fillStyle = "#0F0";
+		ctx.font = font_size + "px arial";
+
+		for (var i=0; i< drops.length; i++) {
+			var text = textChars[Math.floor(Math.random()*textChars.length)];
+
+			if (drops[i]*font_size > c.height && Math.random()>0.975) {
+				drops[i] = 0;
+			}
+
+			ctx.fillText(text,i*font_size,drops[i]*font_size);
+			drops[i]++;
+		}
+	}
+
+	setInterval(draw, 33);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration:none;
+    font-family:"微软雅黑";
+}
+#container{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:url(../images/login_bg.jpg) no-repeat;
+    background-size:cover;
+}
+#content{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:500px;
+    height:350px;
+    margin:auto;
+    box-shadow:4px 4px 20px rgba(0,0,0,0.2);
+}
+#logo{
+    width:250px;
+    height:100%;
+    float:left;
+    background:url(../images/login_logo_bg.jpg) no-repeat;
+    background-size: cover;
+}
+#logo p{
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    border:2px solid #c5c5c5;
+    margin:80px auto 14px;
+    background:url(../images/ffd04740.png) no-repeat;
+    background-position:center;
+    background-size:17px auto;
+}
+#logo h1{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+}
+#logo h2{
+    font-size:12px;
+    margin-top:114px;
+    color:#fff;
+    font-weight:normal;
+    text-align:center;
+}
+#login{
+    width:250px;
+    height:100%;
+    float:left;
+    background:white;
+    text-align:center;
+}
+#login h1{
+    font-size:16px;
+    text-align:center;
+    color:#4b4d5a;
+    margin:19px 0 21px;
+    font-weight:normal
+}
+#login hr{
+    border-color:#f1f1f1;
+}
+#user,#password{
+    width:200px;
+    height:30px;
+    margin:20px auto;
+    border:1px solid #ebebeb;
+}
+#user span,#password span{
+    float:left;
+    width:30px;
+    height:30px;
+    margin-left:0;
+}
+#user span{
+    background:#ebebeb url(../images/login_user.gif) no-repeat;
+    background-position:center;
+    background-size:auto 15px;
+}
+#password span{
+    background:#ebebeb url(../images/login_pass.gif) no-repeat;
+    background-position:center;
+    background-size:auto 15px;
+}
+#user input,#password input{
+    float:left;
+    height:30px;
+    width:165px;
+    margin-left:0;
+    outline:none;
+    border:none;
+    padding-left:5px;
+}
+#btn_login,#btn_reg{
+    display:block;
+    width:202px;
+    height:30px;
+    background:#ebebeb;
+    text-align:center;
+    margin:0 auto;
+    border:none;
+    color:#9b9b9b;
+    line-height:30px;
+    font-size:12pt;
+    out-line:none;
+    cursor:pointer;
+}
+#hr{
+    width:160px;
+    height:0;
+    margin:40px auto 0;
+    border-top:1px solid #ccccce;
+    position:relative;
+}
+#hr div{
+    width:42px;
+    position:absolute;
+    left:36%;
+    top:-13px;
+    background:white;
+    color:#4b4d5a;
+}
+#btn_reg{
+    width:150px;
+    margin-top:30px;
+}
+
+/* ------------------------------注册的页面-------------------------- */
+#reg{
+    width:500px;
+    height:350px;
+    border:1px solid #ccc;
+    position:absolute;
+    z-index:10;
+    background:#fff;
+    display:none;
+}
+#reg h2{
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:1px;
+    color:#666;
+    background:#bbb;
+    border-bottom:1px solid #ccc;
+}
+#reg h2 img{
+    float:right;
+    cursor:pointer;
+    margin:14px 10px 0 0;
+}
+#reg table{
+    margin:10px auto;
+    color:#666;
+}
+#reg table tr{
+    height:30px;
+    position:relative;
+}
+#reg .hint{
+    position:absolute;
+    left:325px;
+    margin-top:4px;
+    font-size:12px;
+}
+#btn_submit_reg{
+    display:block;
+    width:120px;
+    height:33px;
+    background:#666;
+    color:#fff;
+    border-radius:18px;
+    margin:0 auto;
+    border:none;
+    outline:none;
+}

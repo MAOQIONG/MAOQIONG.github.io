@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>like the Martrix</title>
+</head>
+<body>
+<canvas id="c" height="800px"></canvas>
+
+
+<script>
+	var c = document.getElementById("c");
+	c.setAttribute("width",window.innerWidth);
+	var ctx = c.getContext("2d");
+
+	var strings = "abcdefghijklmnopjrstuvwxyz0123456789";
+	var array = strings.split("");
+	c.style.background = "black";
+	var fontSize = 20;
+
+	// 列数
+	var rowTotalNumber = c.width/fontSize;
+	// 所有的列
+	var columns = [];
+	for (var j=0; j<rowTotalNumber; j++) {
+		columns[j] = c.height/fontSize;
+	}
+
+
+	function draw() {
+		ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+		ctx.fillRect(0, 0, c.width, c.height);
+
+		for (var i=0; i<rowTotalNumber; i++) {
+			var content = array[Math.floor(Math.random()*array.length)];
+			ctx.fillStyle = "green";
+			ctx.font = fontSize + "px";
+
+			if (columns[i]*fontSize > c.height && Math.random()>0.95) {
+				columns[i] = 0;
+			}
+
+			ctx.fillText(content, i*fontSize, columns[i]*fontSize);
+			columns[i]++;
+		}
+	}
+
+	setInterval(draw,100);
+
+</script>
+</body>
+</html>

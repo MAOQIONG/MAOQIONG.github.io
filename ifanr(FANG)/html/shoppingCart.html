@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嘉文的购物车</title>
+    <link rel="stylesheet" href="../css/topAndFoot.css">
+    <link rel="stylesheet" href="../css/shoppingCart.css">
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+<body>
+
+<header>
+    <div id="logo">
+        <a href="index.html">
+            <img src="../images/ffd04740.png">
+            <p id="logo_name_p">玩物志</p>
+        </a>
+    </div>
+    <h1 id="logo_name_h1">玩物志</h1>
+    <div id="nav">
+        <div id="search_container">
+            <span></span>
+            <input placeholder="搜索商品...">
+        </div>
+        <ul id="nav_items">
+            <li><a href="#">联系客服</a></li>
+            <li><a href="#">关注我们</a></li>
+            <li id="changable_login"><a href="login.html">登陆</a></li>
+            <li id="btn_cart">
+                <span>0</span>
+                <a href="shoppingCart.html "></a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div id="cart">
+    <h2><span>购物车</span></h2>
+    <h3><i></i> <em>继续购物</em></h3>
+    <table>
+        <tr class="lineOne line_style">
+            <td></td>
+            <td>商品名称</td>
+            <td>规格</td>
+            <td>数量*单价</td>
+            <td>总价</td>
+            <td></td>
+        </tr>
+        <tr class="lineTwo line_style_02">
+            <td class="width_01">
+                <img src="" alt="没商品">
+            </td>
+            <td class="width_02"></td>
+            <td class="width_03"></td>
+            <td class="width_04"></td>
+            <td class="width_05"></td>
+            <td class="width_06"><i></i></td>
+        </tr>
+        <tr class="lineThree line_style_02">
+            <td class="width_01">
+                <img src="" alt="没商品">
+            </td>
+            <td class="width_02"></td>
+            <td class="width_03"></td>
+            <td class="width_04"></td>
+            <td class="width_05"></td>
+            <td class="width_06"><i></i></td>
+        </tr>
+        <tr class="lineFour line_style_02">
+            <td class="width_01">
+                <img src="" alt="没商品">
+            </td>
+            <td class="width_02"></td>
+            <td class="width_03"></td>
+            <td class="width_04"></td>
+            <td class="width_05"></td>
+            <td class="width_06"><i></i></td>
+        </tr>
+    </table>
+    <p>
+        <input type="checkbox">
+        <em>全选</em>
+        <div id="to_pay">
+            <span>总价：Y</span>
+            <i>免邮费</i>
+            <button>马上结算</button>
+        </div>
+    </p>
+    <div class="clear"></div>
+
+</div>
+<div id="guess_you_like">
+    <h2>
+        <span>猜你喜欢</span>
+        <i>></i>
+        <i><</i>
+    </h2>
+    <ul></ul>
+</div>
+
+
+<footer>
+    <div id="footer_top_container">
+        <div id="footer_top">
+            <ul>
+                <li>
+                    <h1>全球尖货</h1>
+                    <h2>Global Selections</h2>
+                    <hr>
+                    <div style="background:url(../images/footer_pic_1.png); background-size:auto 100%;"></div>
+                </li>
+                <li>
+                    <h1>正品保证</h1>
+                    <h2>Authenticity Guaranteed</h2>
+                    <hr>
+                    <div style="background:url(../images/footer_pic_2.png); background-size:auto 100%;"></div>
+                </li>
+                <li>
+                    <h1>全场包邮</h1>
+                    <h2>Free Shipping</h2>
+                    <hr>
+                    <div style="background:url(../images/footer_pic_3.png ); background-size:auto 100%;"></div>
+                </li>
+                <li style="margin-right:0">
+                    <h1>7天无理由退换</h1>
+                    <h2>Free Refused In 7 Days</h2>
+                    <hr>
+                    <div style="background:url(../images/footer_pic_4.png); background-size:auto 100%;"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer_bottom">
+        <div id="footer_bottom_container">
+            <div id="footer_bottom_left">
+                <h1>IFANR.IN</h1>
+                <ul>
+                    <li style="width:70px;text-align:left;"><a href="html/detailPage.html">购物指南</a></li>
+                    <li><a href="html/detailPage.html">商务合作</a></li>
+                    <li><a href="html/detailPage.html">关于我们</a></li>
+                </ul>
+                <p><a>版权所有&copy;广州沃享信息科技有限公司 2008 - 2016 粤 ICP 备 10211557 号</a></p>
+            </div>
+            <div id="footer_bottom_right">
+				<span class="footer_icon" id="icon1">
+					<div><img src="../images/bottom_code_01.gif"></div>
+				</span>
+                <span class="footer_icon" id="icon2"></span>
+                <span class="footer_icon" id="icon3">
+					<div><img src="../images/bottom_code_02.gif"></div>
+				</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="fixed_bar">
+    <div id="fixed_bar_top"></div>
+    <div id="fixed_bar_middle"></div>
+    <div id="fixed_bar_bottom" style="border:none;">
+        <img src="../images/slide_code.gif">
+    </div>
+</div>
+<script src="../js/topBar.js"></script>
+<script src="../js/shoppingCart.js"></script>
+</body>
+</html>
